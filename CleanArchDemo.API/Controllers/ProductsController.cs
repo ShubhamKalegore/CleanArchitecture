@@ -1,4 +1,5 @@
-﻿using CleanArchDemo.Application.Interfaces;
+﻿using CleanArchDemo.Application.DTOs;
+using CleanArchDemo.Application.Interfaces;
 using CleanArchDemo.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +24,13 @@ public class ProductsController : ControllerBase
         return Ok(products);
     }
 
+    [HttpGet("dto")]
+    public async Task<IActionResult> GetAllAsDto()
+    {
+        var products = await _service.GetAllProductsDtoAsync();
+        return Ok(products);
+    }
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
@@ -37,10 +45,9 @@ public class ProductsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Product product)
+    public async Task<IActionResult> Create(CreateProductDto dto)
     {
-        await _service.AddProductAsync(product);
-
-        return Ok("Product created successfully");
+        await _service.AddProductAsync(dto);
+        return Ok("Created successfully");
     }
 }

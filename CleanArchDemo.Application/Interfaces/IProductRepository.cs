@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CleanArchDemo.Application.DTOs;
 using CleanArchDemo.Domain.Entities;
 
 namespace CleanArchDemo.Application.Interfaces;
