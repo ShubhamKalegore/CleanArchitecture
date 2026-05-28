@@ -33,3 +33,25 @@ System.UnauthorizedAccessException: Access to the path 'C:\Users\hp\AppData\Loca
 2026-05-28 12:03:22.768 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2026-05-28 12:03:22.768 +05:30 [INF] Hosting environment: Development
 2026-05-28 12:03:22.768 +05:30 [INF] Content root path: C:\Users\hp\Desktop\CleanArchitecture\CleanArchDemo.API
+2026-05-28 14:21:50.701 +05:30 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 14:21:50.817 +05:30 [INF] Creating key {f2787fa5-862f-4a4f-9ee3-b3e81d8b3ef6} with creation date 2026-05-28 08:51:50Z, activation date 2026-05-28 08:51:50Z, and expiration date 2026-08-26 08:51:50Z.
+2026-05-28 14:21:50.830 +05:30 [INF] Writing data to file 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys\key-f2787fa5-862f-4a4f-9ee3-b3e81d8b3ef6.xml'.
+2026-05-28 14:21:51.047 +05:30 [INF] Now listening on: https://localhost:7265
+2026-05-28 14:21:51.048 +05:30 [INF] Now listening on: http://localhost:5250
+2026-05-28 14:21:51.051 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 14:21:51.053 +05:30 [INF] Hosting environment: Development
+2026-05-28 14:21:51.054 +05:30 [INF] Content root path: C:\Users\hp\Desktop\CleanArchitecture\CleanArchDemo.API
+2026-05-28 14:22:05.975 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/favicon.ico - null null
+2026-05-28 14:22:06.076 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/favicon.ico - 404 0 null 102.7886ms
+2026-05-28 14:22:06.086 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7265/favicon.ico, Response status code: 404
+2026-05-28 14:22:13.631 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/favicon.ico - null null
+2026-05-28 14:22:13.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/favicon.ico - 404 0 null 6.8834ms
+2026-05-28 14:22:13.643 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7265/favicon.ico, Response status code: 404
+2026-05-28 14:23:18.811 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2026-05-28 14:23:18.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 113.2103ms
+2026-05-28 14:23:19.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2026-05-28 14:23:19.270 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 209.7829ms
+2026-05-28 14:23:40.924 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2026-05-28 14:23:40.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 5.3587ms
+2026-05-28 14:23:41.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2026-05-28 14:23:41.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.9179ms

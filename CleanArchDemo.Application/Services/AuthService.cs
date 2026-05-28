@@ -38,7 +38,11 @@ public class AuthService : IAuthService
             return null;
         }
 
-        var user = new User { Email = request.Email };
+        var user = new User
+        {
+            Email = request.Email,
+            Role = request.Role
+        };
         user.PasswordHash = new PasswordHasher<User>().HashPassword(user, request.Password);
 
         await _userRepository.AddAsync(user);
