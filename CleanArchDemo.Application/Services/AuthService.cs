@@ -124,7 +124,7 @@ public class AuthService : IAuthService
             issuer: _configuration.GetValue<string>("AppSettings:Issuer"),
             audience: _configuration.GetValue<string>("AppSettings:Audience"),
             claims: claims,
-            expires: DateTime.UtcNow.AddDays(1),
+            expires: DateTime.Now.AddMinutes(1),
             signingCredentials: creds
         );
 
@@ -139,7 +139,7 @@ public class AuthService : IAuthService
         var refreshToken = Convert.ToBase64String(randomNumber);
 
         user.RefreshToken = refreshToken;
-        user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+        user.RefreshTokenExpiryTime = DateTime.Now.AddMinutes(1);
         await _userRepository.UpdateAsync(user);
         _logger.LogInformation(
             "Refresh token saved for user id {UserId} with expiry {RefreshTokenExpiryTime}.",
