@@ -1,6 +1,6 @@
 ﻿using CleanArchDemo.Application.DTOs;
 using CleanArchDemo.Application.Interfaces;
-using CleanArchDemo.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArchDemo.API.Controllers;
