@@ -1631,3 +1631,77 @@ FROM [Users] AS [u]
 2026-05-28 15:57:20.604 +05:30 [INF] Executed action CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API) in 10.8534ms
 2026-05-28 15:57:20.605 +05:30 [INF] Executed endpoint 'CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API)'
 2026-05-28 15:57:20.607 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/users - 200 null application/json; charset=utf-8 26.244ms
+2026-05-28 15:59:43.272 +05:30 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 15:59:43.614 +05:30 [INF] Now listening on: https://localhost:7265
+2026-05-28 15:59:43.620 +05:30 [INF] Now listening on: http://localhost:5250
+2026-05-28 15:59:43.662 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 15:59:43.664 +05:30 [INF] Hosting environment: Development
+2026-05-28 15:59:43.665 +05:30 [INF] Content root path: C:\Users\hp\Desktop\CleanArchitecture\CleanArchDemo.API
+2026-05-28 15:59:44.437 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2026-05-28 15:59:44.612 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 176.7202ms
+2026-05-28 15:59:44.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 15:59:44.637 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2026-05-28 15:59:44.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 11.3583ms
+2026-05-28 15:59:44.693 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.2965ms
+2026-05-28 15:59:44.743 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2026-05-28 15:59:44.763 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.1118ms
+2026-05-28 16:00:23.700 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7265/api/users - null null
+2026-05-28 16:00:23.712 +05:30 [INF] CORS policy execution successful.
+2026-05-28 16:00:23.714 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7265/api/users - 204 null null 14.5905ms
+2026-05-28 16:00:23.717 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/api/users - null null
+2026-05-28 16:00:23.722 +05:30 [INF] CORS policy execution successful.
+2026-05-28 16:00:23.862 +05:30 [INF] Executing endpoint 'CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API)'
+2026-05-28 16:00:23.879 +05:30 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CleanArchDemo.API.Controllers.UsersController (CleanArchDemo.API).
+2026-05-28 16:00:24.005 +05:30 [INF] Fetching all users.
+2026-05-28 16:00:24.290 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-05-28 16:00:24.852 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[Role]
+FROM [Users] AS [u]
+2026-05-28 16:00:24.893 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CleanArchDemo.Application.DTOs.UserResponseDto, CleanArchDemo.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 16:00:24.905 +05:30 [INF] Executed action CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API) in 1020.43ms
+2026-05-28 16:00:24.907 +05:30 [INF] Executed endpoint 'CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API)'
+2026-05-28 16:00:24.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/users - 200 null application/json; charset=utf-8 1197.7361ms
+2026-05-28 16:01:09.511 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7265/api/users - null null
+2026-05-28 16:01:09.516 +05:30 [INF] CORS policy execution successful.
+2026-05-28 16:01:09.517 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7265/api/users - 204 null null 6.8551ms
+2026-05-28 16:01:09.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/api/users - null null
+2026-05-28 16:01:09.524 +05:30 [INF] CORS policy execution successful.
+2026-05-28 16:01:09.526 +05:30 [INF] Executing endpoint 'CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API)'
+2026-05-28 16:01:09.528 +05:30 [INF] Route matched with {action = "GetAll", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller CleanArchDemo.API.Controllers.UsersController (CleanArchDemo.API).
+2026-05-28 16:01:09.533 +05:30 [INF] Fetching all users.
+2026-05-28 16:01:09.591 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[PasswordHash], [u].[RefreshToken], [u].[RefreshTokenExpiryTime], [u].[Role]
+FROM [Users] AS [u]
+2026-05-28 16:01:09.595 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CleanArchDemo.Application.DTOs.UserResponseDto, CleanArchDemo.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-28 16:01:09.597 +05:30 [INF] Executed action CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API) in 65.9361ms
+2026-05-28 16:01:09.599 +05:30 [INF] Executed endpoint 'CleanArchDemo.API.Controllers.UsersController.GetAll (CleanArchDemo.API)'
+2026-05-28 16:01:09.601 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/api/users - 200 null application/json; charset=utf-8 81.3126ms
+2026-05-28 16:48:02.133 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7265/api/Products - application/json 36
+2026-05-28 16:48:02.136 +05:30 [INF] CORS policy execution failed.
+2026-05-28 16:48:02.137 +05:30 [INF] Request origin https://localhost:7265 does not have permission to access the resource.
+2026-05-28 16:48:02.140 +05:30 [INF] Executing endpoint 'CleanArchDemo.API.Controllers.ProductsController.Create (CleanArchDemo.API)'
+2026-05-28 16:48:02.153 +05:30 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CleanArchDemo.Application.DTOs.CreateProductDto) on controller CleanArchDemo.API.Controllers.ProductsController (CleanArchDemo.API).
+2026-05-28 16:48:02.442 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Name], [Price])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-05-28 16:48:02.466 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-28 16:48:02.469 +05:30 [INF] Executed action CleanArchDemo.API.Controllers.ProductsController.Create (CleanArchDemo.API) in 312.8517ms
+2026-05-28 16:48:02.472 +05:30 [INF] Executed endpoint 'CleanArchDemo.API.Controllers.ProductsController.Create (CleanArchDemo.API)'
+2026-05-28 16:48:02.474 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7265/api/Products - 200 null text/plain; charset=utf-8 342.0613ms
+2026-05-28 17:57:05.027 +05:30 [INF] User profile is available. Using 'C:\Users\hp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-28 17:57:05.385 +05:30 [INF] Now listening on: https://localhost:7265
+2026-05-28 17:57:05.388 +05:30 [INF] Now listening on: http://localhost:5250
+2026-05-28 17:57:05.431 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-28 17:57:05.433 +05:30 [INF] Hosting environment: Development
+2026-05-28 17:57:05.435 +05:30 [INF] Content root path: C:\Users\hp\Desktop\CleanArchitecture\CleanArchDemo.API
+2026-05-28 17:57:05.969 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/index.html - null null
+2026-05-28 17:57:06.152 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/index.html - 200 null text/html;charset=utf-8 187.8629ms
+2026-05-28 17:57:06.164 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-28 17:57:06.164 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/_vs/browserLink - null null
+2026-05-28 17:57:06.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript; charset=utf-8 8.7487ms
+2026-05-28 17:57:06.224 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.8281ms
+2026-05-28 17:57:06.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - null null
+2026-05-28 17:57:06.301 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7265/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.0611ms
