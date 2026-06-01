@@ -1,4 +1,5 @@
 using CleanArchDemo.Application;
+using CleanArchDemo.API.Middleware;
 using CleanArchDemo.Infrastructure;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -88,6 +89,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCors("AngularClient");
+
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();
