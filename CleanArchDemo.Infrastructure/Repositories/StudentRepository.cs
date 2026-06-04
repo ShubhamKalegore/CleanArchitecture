@@ -28,7 +28,7 @@ public class StudentRepository : IStudentRepository
         return await _context.Students.Where(s => s.Id == id).FirstOrDefaultAsync();
     }
 
-    public async Task<Student?> Save(Student student)
+    public async Task<Student> Save(Student student)
     {
         await _context.Students.AddAsync(student);
         await _context.SaveChangesAsync();
@@ -79,5 +79,18 @@ public class StudentRepository : IStudentRepository
             .Where(s => s.CourseId == courseId)
             .Include(s => s.Course)
             .ToListAsync();
+    }
+
+    public async Task<List<Course>> GetAllCourses()
+    {
+        return await _context.Courses.ToListAsync();
+    }
+
+    public async Task<Course> SaveCourse(Course course)
+    {
+        await _context.Courses.AddAsync(course);
+        await _context.SaveChangesAsync();
+
+        return course;
     }
 }

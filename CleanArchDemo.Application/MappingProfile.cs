@@ -14,8 +14,17 @@ public class MappingProfile : Profile
         CreateMap<CreateProductDto, Product>();
         CreateMap<Product, CreateProductDto>();
 
-        CreateMap<StudentDto, Student>();
-        CreateMap<Student, StudentDto>();
+        CreateMap<StudentDto, Student>()
+            .ForMember(dest => dest.Course, opt => opt.Ignore());
+
+        CreateMap<Student, StudentDto>()
+            .ForMember(
+                dest => dest.Course,
+                opt => opt.MapFrom(src => src.Course == null ? string.Empty : src.Course.Name));
+
+        CreateMap<CourseDto, Course>()
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<Course, CourseDto>();
         
     }
 }

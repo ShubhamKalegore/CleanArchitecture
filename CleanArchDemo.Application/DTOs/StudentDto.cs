@@ -15,5 +15,7 @@ public class StudentDto
 
     public int Age { get; set; }
 
+    public int CourseId { get; set; }
+
     public string Course { get; set; } = string.Empty;
 }

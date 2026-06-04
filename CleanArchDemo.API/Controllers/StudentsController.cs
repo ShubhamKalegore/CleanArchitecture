@@ -55,6 +55,26 @@ namespace CleanArchDemo.API.Controllers
             return Ok(_mapper.Map<StudentDto>(result));
         }
 
+        [HttpPost("course")]
+        public async Task<IActionResult> CreateCourse(CourseDto dto)
+        {
+            var course = _mapper.Map<Course>(dto);
+
+            var result = await _studentService.SaveCourse(course);
+
+            return Ok(_mapper.Map<CourseDto>(result));
+        }
+
+        [HttpGet("course")]
+        public async Task<IActionResult> GetAllCourses()
+        {
+            var courses = await _studentService.GetAllCourses();
+
+            var result = _mapper.Map<List<CourseDto>>(courses);
+
+            return Ok(result);
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateStudent(int id, StudentDto dto)
         {

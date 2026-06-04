@@ -58,4 +58,14 @@ public class StudentService : IStudentService
     {
         return await _studentRepository.GetStudentsByCourseId(courseId);
     }
+
+    public async Task<List<Course>> GetAllCourses()
+    {
+        return await _studentRepository.GetAllCourses();
+    }
+
+    public async Task<Course> SaveCourse(Course course)
+    {
+        return await _studentRepository.SaveCourse(course);
+    }
 }

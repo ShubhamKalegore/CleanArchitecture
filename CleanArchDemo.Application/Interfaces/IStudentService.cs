@@ -24,4 +24,8 @@ public interface IStudentService
     Task<List<Student>> GetStudentsWithCourse();
 
     Task<List<Student>> GetStudentsByCourseId(int courseId);
+
+    Task<List<Course>> GetAllCourses();
+
+    Task<Course> SaveCourse(Course course);
 }
